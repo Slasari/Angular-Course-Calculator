@@ -11,7 +11,16 @@ export class AppComponent {
   second_number: number = 0;
   resultado: number = 0;
 
-  sumar(a:number, b:number){
-    this.resultado = a + b
+  sumar(): void{
+    this.resultado = this.first_number + this.second_number
+  }
+  restar(): void{
+    this.resultado = this.first_number - this.second_number
+  }
+  multiplicar(): void{
+    this.resultado = this.first_number * this.second_number
+  }
+  dividir(): void{
+    this.resultado = this.first_number / this.second_number
   }
 }
